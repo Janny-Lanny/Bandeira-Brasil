@@ -1,0 +1,65 @@
+body {
+    background-color: #1a1a1a;
+}
+.brasil-bandeira {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    background-color: #16b83e;
+    margin: 7em auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.losangulo{
+    display: flex;
+}
+
+.los1 {
+    width: 0px;
+    height: 0px;
+    border-top: 55px solid transparent;
+    border-right: 100px solid #ffe11f;
+    border-bottom: 55px solid transparent;
+}
+
+.los2 {
+    width: 0px;
+    height: 0px;
+    border-bottom: 55px solid transparent;
+    border-top: 55px solid transparent;
+    border-left: 100px solid #ffe11f;
+}
+
+.circulo {
+    border-radius: 50%;
+    background-color: #1651b8;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #1651b8;
+
+}
+.faixa {
+    background-color: #fff;
+    width: 150%;
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    bottom: -30%;
+    left: -20px;
+    transform: rotate(20deg);
+}
+
+.faixa::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1651b8;
+    border-radius: 50%;
+    bottom: -12%;
+
+}
